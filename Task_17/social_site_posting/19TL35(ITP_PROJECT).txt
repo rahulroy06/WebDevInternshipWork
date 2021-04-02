@@ -1,0 +1,51 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+int main(){
+    int pin = 1234;
+    int balance = 10000;
+    cout<<"Welcome to the Allied Bank";
+    int amount;
+    int operate;
+        cout<<"Pick any one operation"<<endl;
+        cout<<"1 : Cash Depositing"<<endl;
+        cout<<"2 : Checking Balance"<<endl;
+        cout<<"3 : Withdraw Cash"<<endl;
+    cin>>operate;
+    switch(operate){
+        case 1:
+            int deposit;
+            cout<<"Enter the amount to be deposited";
+            cin>>deposit;
+            balance += deposit;
+            cout<<"Your amount was deposited successully"; break;
+            cout<<"Your total account balance is : "<<balance;
+        case 2: 
+            cout<<"Your total accout balance = "<<balance; break;
+        case 3:
+            int amount;
+            cout<<"Enter the amount to be withdrawn."<<endl;
+            cin>>amount;
+            if(amount / 500 != 0){
+                cout<<"Please Enter a amount, multiple of 500"<<endl;
+            }else{
+                balance -= amount;
+            }
+            if(amount / 5000){
+                amount = amount % 5000;
+                cout<<"Your amount in 5000 notes will be : "<<amount/5000<<endl;
+            }
+            if(amount / 1000){
+                amount = amount % 1000;
+                cout<<"Your amount in 1000 notes will be : "<<amount/1000<<endl;
+            }
+            if(amount / 500){
+                amount = amount % 500;
+                cout<<"Your amount in 5000 notes will be : "<<amount/500<<endl;
+            }
+            break;    
+    }
+    return 0; 
+}
+

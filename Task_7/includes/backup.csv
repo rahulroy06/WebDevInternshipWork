@@ -1,0 +1,8 @@
+ID,Username,Password,"User Type","Full Name",Status
+20,hamza@gmail.com,hamza1234,CUSTOMER,Hamza,approved
+18,iqra@gmail.com,iqra123456,CUSTOMER,"Iqra Noor",approved
+17,"aaja@gmail,com",ajkajaam,CUSTOMER,Khalil,approved
+14,akbar@gmail.com,akbar1234,CUSTOMER,Akbar,approved
+13,basit@gmail.com,basit1234,CUSTOMER,Basit,approved
+9,khalil@gmail.com,khalil,MODERATOR,Khalil,approved
+1,ADMIN,admin1234,ADMIN,Admin,
